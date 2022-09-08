@@ -9,3 +9,4 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf /home/coinhalldev/go1.1
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 source ~/.profile
 echo "export PATH=$PATH:$(go env GOPATH)/bin" >> ~/.profile
+source ~/.profile
