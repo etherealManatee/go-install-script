@@ -6,7 +6,7 @@ LATEST_GO_DOWNLOAD_URL="https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.t
 wget https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz -P /home/coinhalldev/
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf /home/coinhalldev/go1.19.1.linux-amd64.tar.gz
 
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
-source ~/.profile
-echo "export PATH=$PATH:$(go env GOPATH)/bin" >> ~/.profile
-source ~/.profile
+echo "export PATH=$PATH:/usr/local/go/bin" >> /home/coinhalldev/.profile
+source /home/coinhalldev/.profile
+echo "export PATH=$PATH:$(go env GOPATH)/bin" >> /home/coinhalldev/.profile
+source /home/coinhalldev/.profile
