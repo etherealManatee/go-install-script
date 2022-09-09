@@ -11,12 +11,12 @@ cd $HOME
 printf "Downloading ${LATEST_GO_DOWNLOAD_URL}\n\n";
 wget https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz -P $HOME
 printf "Extracting file and installing Go...\n"
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf /home/coinhalldev/go1.19.1.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $HOME/go1.19.1.linux-amd64.tar.gz
 
-printf "Updating paths and .profile .../n"
+printf "Updating paths and .profile ...\n"
 echo "export PATH=$PATH:/usr/local/go/bin" >> $HOME/.profile
 source ~/.profile
 echo "export PATH=$PATH:$(go env GOPATH)/bin" >> /home/coinhalldev/.profile
 source ~/.profile
-printf "Updated!/n"
+printf "Updated!\n"
 go version
