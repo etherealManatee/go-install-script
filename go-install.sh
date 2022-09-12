@@ -16,7 +16,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $HOME/go1.19.1.linux-am
 printf "Updating paths and .profile ...\n"
 echo "export PATH=$PATH:/usr/local/go/bin" >> $HOME/.profile
 source ~/.profile
-echo "export PATH=$PATH:$(go env GOPATH)/bin" >> /home/coinhalldev/.profile
+echo "export PATH=$PATH:$(go env GOPATH)/bin" >> $HOME/.profile
 source ~/.profile
 printf "Updated!\n"
 go version
